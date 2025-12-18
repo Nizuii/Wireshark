@@ -25,3 +25,10 @@ The internet uses TCP/IP protocol (Set of rules on how data is transfered over a
  
 - A port number will be always associated with IP address.
 - IP address and port number work together to exchange data on a network.
+- The IP address determines the location of that server.
+- A port number determines which service or program on that server it wants to use.
+- Port numbers are divided into 3:
+
+  - Port numbers: 0-1023 are system or well known ports. These are common ports that people use everyday. **Example**: 80,443,21,25.
+  - Port numbers: 1024-49151 are called user or registered ports. These are ports that are registered by companies and developers for particular services.
+  - Port numbers: 49152-65535 are called dynamic or private ports. These are client side ports that are free to use. These are ports that your computer assigns temporarily to itself during a session.
