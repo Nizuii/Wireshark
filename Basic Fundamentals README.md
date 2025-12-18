@@ -32,3 +32,18 @@ The internet uses TCP/IP protocol (Set of rules on how data is transfered over a
   - Port numbers: 0-1023 are system or well known ports. These are common ports that people use everyday. **Example**: 80,443,21,25.
   - Port numbers: 1024-49151 are called user or registered ports. These are ports that are registered by companies and developers for particular services.
   - Port numbers: 49152-65535 are called dynamic or private ports. These are client side ports that are free to use. These are ports that your computer assigns temporarily to itself during a session.
+
+## 3️⃣ What is a protocol?
+
+- A protocol is a set of rules that devices follow to communicate with each other over a network.
+- If 2 devices doesnt follow the same protocol they cant understand each other even if they are connected.
+- A protocol defines things like:
+
+  - How data is formated.
+  - How it's sent.
+  - How it is received.
+  - How errors are handled.
+  - What happens if something goes wrong.
+  - Who talks first and who replies.
+ 
+Without protocols network would be pure chaos.
