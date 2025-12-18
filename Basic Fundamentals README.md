@@ -9,3 +9,19 @@ The internet uses TCP/IP protocol (Set of rules on how data is transfered over a
 #### Why does the internet use data packets?
 - The reason fpr using data packets is to make the internet run smoother and more efficient.
 - If internet didnt use data packets and instead it sent all the data together in a long uninterrupted stream of bits and inorder for the data to be read, those bits whould have to be sent in the correct order and this method is what we call **circuit switching**. But a problem with it is that during the transmission of the data no other computers will be able to use those lines until the transmission is complete.
+
+## 2️⃣ What is a port?
+
+- A port is not a physical connection. It is a logical connection that is used by programs and services to exchange information.
+- It specifically determines which program or service on a computer or server is going to be used.
+- Whether that is pulling up a web page, using a FTP service, accessing email's and so on.
+- Ports will have unique numbers that will identify them.
+- The number ranges from 0 - 65535.
+- Example common ports:
+
+  - **80, 443** - Web pages (http, https).
+  - **21** - For FTP (File transfer protocol).
+  - **25** - For E-mail (SMTP).
+ 
+- A port number will be always associated with IP address.
+- IP address and port number work together to exchange data on a network.
