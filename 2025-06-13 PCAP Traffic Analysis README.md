@@ -75,3 +75,24 @@
 - No normal web browsing patterns (no multiple domains, no asset loading).
 
 > Encrypted TLS traffic indicates direct command-and-control communication rather than user-driven web activity.
+
+## Phase 5 — Conversation & Beaconing Analysis
+
+<img src="/images/5.png">
+
+### Actions Taken.
+
+- Reviewed **Statistics** ➡️ **Conversations** ➡️ **TCP**
+- Sorted by packets, bytes and durations.
+
+### Findings.
+
+- Coversation between **10.6.13.133 ↔️ 83.137.149.15** had:
+
+  - 35,485 packets
+  - 34 MB of data
+  - 360 seconds duration.
+
+- Significantly larger and longer than all other conversations.
+
+> Persistent, high-volume, long-lived encrypted session confirms automated beaconing behavior consistent with malware C2.
