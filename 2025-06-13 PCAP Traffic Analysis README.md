@@ -26,3 +26,10 @@
 
 - **Reviewed Statistics ➡️ Endpoints ➡️ IPV4**
 - Sorted by packet count and byte volume.
+
+### Findings.
+
+- Identified that **10.6.13.133** was theinfected internal IP address because it generated the highest number of packets and bytes.
+- Also Identified that **83.137.149.15** was the external IP address because it also generated huge number of packets and bytes.
+
+> Internal host 10.6.13.133 identified as the infected endpoint communicating heavily with external host 83.137.149.15. Giving hint that its either beaconing oe exfiltration.
