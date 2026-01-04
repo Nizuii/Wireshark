@@ -104,7 +104,7 @@
 
 ## Key Indicators of Compromise (IOCs)
 
-- **Infected Host** - 10.6.13.133- 
-**C2 IP** - 83.137.149.15
-**Protocol** - TCP / TLS (Port 443)
-**Behaviour** - Persistent encrypted beaconing
+- **Infected Host** - 10.6.13.133
+- **C2 IP** - 83.137.149.15
+- **Protocol** - TCP / TLS (Port 443)
+- **Behaviour** - Persistent encrypted beaconing
