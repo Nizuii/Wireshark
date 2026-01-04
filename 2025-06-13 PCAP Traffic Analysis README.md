@@ -96,3 +96,15 @@
 - Significantly larger and longer than all other conversations.
 
 > Persistent, high-volume, long-lived encrypted session confirms automated beaconing behavior consistent with malware C2.
+
+## Final Incident Verdict
+
+- **Confirmed Malware Infection**
+- Internal host **10.6.13.133** is actively communicating with external command-and-control server **83.137.149.15** over encrypted TLS. Traffic patterns confirm automated beaconing behavior.
+
+## Key Indicators of Compromise (IOCs)
+
+**Infected Host** - 10.6.13.133
+**C2 IP** - 83.137.149.15
+**Protocol** - TCP / TLS (Port 443)
+**Behaviour** - Persistent encrypted beaconing
