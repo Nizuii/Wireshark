@@ -56,3 +56,22 @@
 - No suspicious TLDs or repeated unknown domains are also not visible.
 
 > DNS activity is noisy but legitimate. No evidence of DGA or DNS-based command-and-control. DNS ruled out as the C2 channel.
+
+## Phase 4 - TLS / HTTP Analysis
+
+<img src="4.png">
+
+### Actions Taken.
+
+- Applied Filter:
+
+  ```bash
+  ip.addr == 10.6.13.133 && (tls || http)
+  ```
+### Findings
+
+- After scrolling a bit we discovered that repeated connections between **10.6.13.133** and **83.137.149.15**.
+- TLS 1.2 sessions with continuous encrypted application data.
+- No normal web browsing patterns (no multiple domains, no asset loading).
+
+> Encrypted TLS traffic indicates direct command-and-control communication rather than user-driven web activity.
