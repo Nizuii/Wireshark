@@ -59,7 +59,7 @@
 
 ## Phase 4 - TLS / HTTP Analysis
 
-<img src="4.png">
+<img src="/images/4.png">
 
 ### Actions Taken.
 
