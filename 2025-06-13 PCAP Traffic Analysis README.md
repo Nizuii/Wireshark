@@ -33,3 +33,25 @@
 - Also Identified that **83.137.149.15** was the external IP address because it also generated huge number of packets and bytes.
 
 > Internal host 10.6.13.133 identified as the infected endpoint communicating heavily with external host 83.137.149.15. Giving hint that its either beaconing oe exfiltration.
+
+## Phase 3 - DNS Analysis.
+
+<img src="/images/3.png">
+
+### Actions Taken.
+
+- Applied Filter:
+  ```bash
+  ip.addr == 10.6.13.133 && dns
+  ```
+
+### Findings
+
+- DNS queries looks legitimate because the domains are all legitimate like:
+
+  - Microsoft, Bing, Azure, Skype, Windows Update
+ 
+- No random or high-entropy domain names is visible.
+- No suspicious TLDs or repeated unknown domains are also not visible.
+
+> DNS activity is noisy but legitimate. No evidence of DGA or DNS-based command-and-control. DNS ruled out as the C2 channel.
